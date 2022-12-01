@@ -1,10 +1,10 @@
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
 
 :root {
-  --color-main: #45529d;
+  --color-main: white;
   --color-hide: #8188ae;
   --color-hide-dark: #7178a0;
-  --color-add: #34baec;
+  --color-add: rgb(128, 247, 128);
   --color-add-dark: #2ca6d2;
   --color-remove: #b8555e;
   --color-remove-light: #cb636c;
@@ -19,7 +19,7 @@ body {
   color: #222;
   line-height: 1.5;
   padding: 0 0 40px 0;
-  background: #d5e4ef;
+  background: beige;
   margin: 0;
 }
 .wrapper {
@@ -33,12 +33,12 @@ body {
 header {
   text-align: center;
   padding: 2.5em 1em;
-  background-color: var(--color-main);
+  background-color: va;
 }
 header h1 {
   font-size: 2.5em;
   line-height: 1;
-  color: #fff;
+  color: black;
   margin: 0 0 0.65em;
 }
 .group {
@@ -96,6 +96,18 @@ button {
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
 }
+#btn-star {
+  color: white;
+  font-size: 1em;
+  padding: 1em;
+  background-color: gold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+#btn-star:hover {
+  background-color: var(--color-add-dark);
+}
 button:hover {
   background-color: var(--color-add-dark);
 }
@@ -104,7 +116,7 @@ button:focus {
   outline-offset: -3px;
 }
 .btn-toggle {
-  background-color: var(--color-hide);
+  background-color: rgb(128, 247, 128);
 }
 .btn-toggle:hover {
   background-color: var(--color-hide-dark);
@@ -112,7 +124,7 @@ button:focus {
 .btn-remove {
   color: white;
   padding: 0.85em 1em;
-  background-color: var(--color-remove);
+  background-color: rgb(128, 247, 128);
 }
 li input[type="checkbox"],
 li button  {

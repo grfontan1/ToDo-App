@@ -11,15 +11,16 @@
       <header>
         <h1 id="headline">My Day</h1>
         <div class="group">
-          <label for="main">What's your task?</label>
-          <input type="text" id="main" class="input-main">
+          <label for="main"></label>
+          <input type="text" id="main" class="input-main" placeholder="What's your task?">
           <button id="btn-main">Add Task</button>
+          <button id="btn-star">Important Task</button>
         </div>
       </header>
 
       <button id="btn-toggle">Hide List</button>
       <div class="list-container">
-        <ul id="list-items">
+        <ul aria-live="polite">
           <li>Hit the gym<input type="checkbox"></li>
           <li>Practice JavaScript<input type="checkbox"></li>
           <li>Realize I have no idea what I'm doing<input type="checkbox"></li>

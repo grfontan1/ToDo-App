@@ -9,24 +9,32 @@ btnCreate.addEventListener('click', () => {
     const list = document.querySelector('ul')
     const todos = document.createElement('li');
     
-    todos.textContent = newTask.value;
-    newTask.value = '';
-    list.appendChild(todos);
+    if(newTask.value){
+        todos.textContent = newTask.value
+        newTask.value = '';
+        list.appendChild(todos);
+    }else{
+        alert('You did not enter a task!')
+    }
     
-
     
-})
+});
 
 btnStar.addEventListener('click', () => {
     const starInput = document.querySelector('.input-main');
     const starList = document.querySelector('ul');
     const starTask = document.createElement('li');
 
-    starTask.textContent = starInput.value;
-    starInput.value = '';
-    starList.prepend(starTask);
+    if(starInput.value){
+        starTask.textContent = starInput.value;
+        starInput.value = '';
+        starList.prepend(starTask);
+    }else{
+        alert('You did not enter an important task!')
+    }
+    
 
-})
+});
 
 
 
